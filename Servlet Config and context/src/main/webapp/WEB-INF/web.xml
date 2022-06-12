@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlet Config and context</display-name>
+  <servlet>
+    <servlet-name>Servers</servlet-name>
+    <servlet-class>server1.Myserver</servlet-class>
+    <init-param>
+      <param-name>Name</param-name>
+      <param-value>Arzoo Khadka</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servers</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>Name</param-name>
+    <param-value>Ahimsha Mudbari</param-value>
+  </context-param>
+  <context-param>
+    <param-name>Course</param-name>
+    <param-value>BCA</param-value>
+  </context-param>
+</web-app>
